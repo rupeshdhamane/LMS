@@ -1,0 +1,110 @@
+<div class="signin-div flex-column-centered">
+    <div class="signin-comps">
+        <h1 class="text-center">Create New Account</h1>
+        <form method="post" class="flex-column-centered">
+            <input type="text" name="user" id="user" placeholder="Username" required>
+            <input type="text" name="user" id="user" placeholder="E-mail" required>
+            <input type="text" name="user" id="user" placeholder="En.roll no" required>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+            <input type="submit" value="Submit">
+        </form>
+        <!-- <a href="#">
+            <p class="text-center">Forgot Password?</p>
+        </a> -->
+    </div>
+</div>
+
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+
+        background-color: rgb(216, 216, 216)
+    }
+
+    .flex-column-centered {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .signin-div {
+        min-height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .signin-div .signin-comps {
+        padding: 2em;
+        border-radius: 30px;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .signin-div form {
+        padding: 20px 0;
+        position: relative;
+        z-index: 2;
+    }
+
+    .signin-div form input[type=text],
+    .signin-div form input[type=password] {
+        margin: 0.5rem auto;
+        border-radius: 22px;
+        border: 1px solid;
+        padding: 12px;
+        width: 370px;
+        outline: none;
+    }
+
+
+
+    .signin-div form input[type=submit] {
+        background: #4AD295;
+        color: black;
+        border-radius: 25px;
+        margin: 0.5rem auto;
+        padding: 12px;
+        width: 150px;
+        border: none;
+        cursor: pointer;
+        border: 2px solid #4AD295;
+
+    }
+
+    .signin-div form input[type=submit]:hover {
+        background-color: transparent;
+    }
+
+    .signin-div form input[type=submit]:active {
+        transform: scale(0.95);
+    }
+
+    .signin-div .text-center {
+        text-align: center;
+    }
+
+    .signin-div a {
+        text-decoration: none;
+
+    }
+
+    @media (max-width: 576px) {
+        .signin-div {
+            padding: 2rem 1.5rem !important;
+        }
+
+        .signin-div .signin-comps,
+        .signin-div input[type=text],
+        .signin-div input[type=password] {
+            width: 100%;
+        }
+    }
+</style>

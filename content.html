@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+    </title>
+    <style>
+        body {
+            margin: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(27, 152, 94);
+        }
+
+        img {
+            float: left;
+            margin: 5px;
+            width: 120px;
+    margin: 5px 5px 5px 5px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 25px;
+        }
+
+        html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    padding: 90px;
+    background-color: white;
+}
+.quiz,
+.choices {
+    list-style-type: none;
+    padding: 0;
+}
+.choices li {
+    margin-bottom: 5px;
+}
+.choices label {
+    display: flex;
+    align-items: center;
+}
+.choices label,
+input[type="radio"] {
+    cursor: pointer;
+}
+input[type="radio"] {
+    margin-right: 7px;
+}
+.view-results {
+    /* width: 200px; */
+    padding: 15px;
+    text-align: center;
+    margin: 20px 0px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(28, 163, 141);
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.view-results:hover {
+    background-color: rgb(28, 163, 141);
+    color: black;
+  }
+
+
+    </style>
+</head>
+
+<body>
+    <h1>unit !</h1>
+    <b>
+        Lorem ipsum dolor sit amet consectetur.
+    </b>
+    <div class="square">
+        <div class="logo">
+            <img src="demologo.jpg" alt="logo">
+        </div>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque modi maxime a nam ab pariatur veniam
+            aspernatur culpa architecto eligendi vero eius vitae nemo ducimus itaque iure porro unde suscipit, voluptate
+            laboriosam minima reiciendis. Nam explicabo deleniti voluptatum voluptate aut hic architecto ex dolorum.
+            Reiciendis qui ex doloremque distinctio perferendis delectus sit quidem tempora consequatur perspiciatis,
+            facilis nihil, cum debitis? Sint eaque deleniti odit voluptatibus voluptatum explicabo ducimus maxime.
+            Doloremque, dicta quia natus nam a sit et sunt cumque? Eligendi ipsam corporis totam cupiditate delectus
+            quam excepturi, nihil quod iste explicabo nesciunt! Distinctio minus, eum ullam saepe amet expedita earum.
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, tempore recusandae iusto suscipit placeat
+            voluptate, distinctio perspiciatis laudantium ipsam tenetur iste cumque. Possimus mollitia, quibusdam rem
+            doloribus ipsum ut modi. Numquam, voluptate? In, minus quaerat voluptates sunt officiis tempore veniam
+            labore placeat eos at dicta consectetur beatae quasi id adipisci aliquam libero eius illo voluptatum nihil!
+            Repellat eius nisi adipisci assumenda autem voluptatibus dolores mollitia enim. Quis commodi id alias, eaque
+            voluptate minima placeat necessitatibus quidem. Corporis officia accusamus adipisci. Quidem pariatur
+            voluptatibus amet optio enim, magni repellendus nihil quasi possimus harum autem sint nesciunt excepturi
+            itaque? Maxime, inventore facere?
+        </p>
+
+    </div>
+    <ul class="quiz">
+        <li>
+            <h4>How many letters are there in "JS"?</h4>
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="question0" value="A" /><span>2</span></label>
+                </li>
+                <li>
+                    <label><input type="radio" name="question0" value="B" /><span>1</span></label>
+                </li>
+                <li>
+                    <label><input type="radio" name="question0" value="C" /><span>3</span></label>
+                </li>
+                <li>
+                    <label><input type="radio" name="question0" value="D" /><span>4</span></label>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h4>How many letters are there in "BMX"?</h4>
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="question1" value="A" /><span>2</span></label>
+                </li>
+                <li>
+                    <label><input type="radio" name="question1" value="B" /><span>1</span></label>
+                </li>
+                <li>
+                    <label><input type="radio" name="question1" value="C" /><span>3</span></label>
+                </li>
+                <li>
+                    <label><input type="radio" name="question1" value="D" /><span>4</span></label>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <h4>How many letters are there in "A"?</h4>
+            <ul class="choices">
+                <li>
+                    <label><input type="radio" name="question2" value="A" /><span>2</span></label>
+                </li>
+                <li>
+                    <label><input type="radio" name="question2" value="B" /><span>1</span></label>
+                </li>
+                <li>
+                    <label><input type="radio" name="question2" value="C" /><span>3</span></label>
+                </li>
+                <li>
+                    <label><input type="radio" name="question2" value="D" /><span>4</span></label>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <button class="view-results" onclick="returnScore()">View Results</button>
+    
+
+</body>
+
+</html>

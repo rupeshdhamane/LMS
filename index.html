@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header bar */
+.header {
+    overflow: hidden;
+    background-color: #fff;
+    z-index: 2;
+    padding: -1px 10px;
+    width: 100%;
+    position: fixed;
+border-bottom: 1px solid rgb(0, 0, 0,.2);
+  }
+  
+  /* header links */
+  .header a {
+    margin: 10px 10px 10px 10px;
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 9px;
+    transition: all 0.5s;
+  }
+  
+  .header a.active {
+  background-color: rgb(28, 163, 141);
+  color: white;
+}
+
+  /* Lpgo */
+  .header .logo {
+    width: 50px;
+    margin: 5px 5px 5px 50px;
+  }
+  
+  /* Change the background color on mouse-over */
+  .header a:hover {
+    background-color: rgb(28, 163, 141);
+    color: black;
+  }
+  
+  
+  /* Float the link section to the right */
+  .header-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness */
+  @media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+  }
+  .content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: black;
+  }
+  .content h1{
+    font-size: 50px;
+    margin-top: 80px;
+  }
+  .content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+  }
+  button{
+    width: 200px;
+    padding: 15px;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(28, 163, 141);
+    background: transparent;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s;
+  }
+button:hover {
+    background-color: rgb(28, 163, 141);
+    color: black;
+  }
+
+.continue{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 80px;
+ 
+}
+h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+p{
+  color: black;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.p2{
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+}
+
+.row0{
+  /* margin-top: 5%; */
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 5%; */
+}
+.continue-col{
+  flex-basis: 31%;
+  background: rgb(28, 163, 141);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 40px 0px;
+
+}
+.continue-col2{
+  color: white;
+  flex-basis: 31%;
+  background: rgb(5, 46, 97);
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 40px 0px;
+
+}
+/* 
+.course-layout{
+} */
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" class="logo"> 
+        <div class="header-right">
+          <a class="active" href="#">Home</a>
+          <a href="#About LMS">About LMS</a>
+          <a href="#Browse">Profile</a>
+          <a href="courses.html">Courses</a>
+        </div>
+      </div>
+
+    <div class="banner">
+      <div class="content">
+        <h1>Welcome @User</h1>
+        <p>Sample text. Click to select the text box. Click again or double
+            click to start editing the text.<br>
+            Viverra maecenas accumsan lacus veacilisis volutpat.
+            Cras fermentum odio eu feugiat pretium nibh.</p>
+            <div class="button">
+                <button type="button" href="courses.html" ><span></span>Start Learning</button>
+            </div>
+      </div>
+    </div>
+    <div class="continue-layout">
+    <section class="continue">
+      <h1>Courses of you</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing.
+      </p>
+      <div class="row">
+        <div class="continue-col">
+          <h3>solved course</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Aperiam fugit quidem, recusandae reiciendis dolorum eos?
+              Quisquam ipsa animi hic. Error!</p>
+        </div>
+        <div class="continue-col2">
+          <h3>Current course</h3>
+          <p class="p2">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Aperiam fugit quidem, recusandae reiciendis dolorum eos?
+              Quisquam ipsa animi hic. Error!</p>
+        </div>
+        <div class="continue-col">
+          <h3>Upcomming course</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+             Aperiam fugit quidem, recusandae reiciendis dolorum eos?
+              Quisquam ipsa animi hic. Error!</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+</body>
+</html>
